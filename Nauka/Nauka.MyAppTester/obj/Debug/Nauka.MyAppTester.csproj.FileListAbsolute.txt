@@ -6,3 +6,11 @@ C:\Users\User\documents\visual studio 2015\Projects\Nauka\Nauka.MyAppTester\bin\
 C:\Users\User\documents\visual studio 2015\Projects\Nauka\Nauka.MyAppTester\obj\Debug\Nauka.MyAppTester.csprojResolveAssemblyReference.cache
 C:\Users\User\documents\visual studio 2015\Projects\Nauka\Nauka.MyAppTester\obj\Debug\Nauka.MyAppTester.dll
 C:\Users\User\documents\visual studio 2015\Projects\Nauka\Nauka.MyAppTester\obj\Debug\Nauka.MyAppTester.pdb
+D:\MyLearning\Nauka\Nauka.MyAppTester\bin\Debug\Nauka.MyAppTester.dll
+D:\MyLearning\Nauka\Nauka.MyAppTester\bin\Debug\Nauka.MyAppTester.pdb
+D:\MyLearning\Nauka\Nauka.MyAppTester\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\MyLearning\Nauka\Nauka.MyAppTester\bin\Debug\Nauka.MemoryGame.exe
+D:\MyLearning\Nauka\Nauka.MyAppTester\bin\Debug\Nauka.MemoryGame.pdb
+D:\MyLearning\Nauka\Nauka.MyAppTester\obj\Debug\Nauka.MyAppTester.csprojResolveAssemblyReference.cache
+D:\MyLearning\Nauka\Nauka.MyAppTester\obj\Debug\Nauka.MyAppTester.dll
+D:\MyLearning\Nauka\Nauka.MyAppTester\obj\Debug\Nauka.MyAppTester.pdb

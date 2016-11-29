@@ -38,7 +38,7 @@ namespace Nauka.MemoryGame.MemoryClass
 
         public void PictureShow(List<MemField> fields , MemBoard memBoard)
         {
-            fields.ForEach(field => field.BackgroundImage = true);
+            //fields.ForEach(field => field.BackgroundImage = true);
         }
 
     }

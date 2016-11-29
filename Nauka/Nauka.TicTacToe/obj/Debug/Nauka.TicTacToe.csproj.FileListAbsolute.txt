@@ -7,3 +7,12 @@ C:\Users\User\documents\visual studio 2015\Projects\Nauka\Nauka.TicTacToe\obj\De
 C:\Users\User\documents\visual studio 2015\Projects\Nauka\Nauka.TicTacToe\obj\Debug\Nauka.TicTacToe.csproj.GenerateResource.Cache
 C:\Users\User\documents\visual studio 2015\Projects\Nauka\Nauka.TicTacToe\obj\Debug\Nauka.TicTacToe.exe
 C:\Users\User\documents\visual studio 2015\Projects\Nauka\Nauka.TicTacToe\obj\Debug\Nauka.TicTacToe.pdb
+D:\MyLearning\Nauka\Nauka.TicTacToe\bin\Debug\Nauka.TicTacToe.exe.config
+D:\MyLearning\Nauka\Nauka.TicTacToe\obj\Debug\Nauka.TicTacToe.exe
+D:\MyLearning\Nauka\Nauka.TicTacToe\obj\Debug\Nauka.TicTacToe.pdb
+D:\MyLearning\Nauka\Nauka.TicTacToe\bin\Debug\Nauka.TicTacToe.exe
+D:\MyLearning\Nauka\Nauka.TicTacToe\bin\Debug\Nauka.TicTacToe.pdb
+D:\MyLearning\Nauka\Nauka.TicTacToe\obj\Debug\Nauka.TicTacToe.csprojResolveAssemblyReference.cache
+D:\MyLearning\Nauka\Nauka.TicTacToe\obj\Debug\Nauka.TicTacToe.Form1.resources
+D:\MyLearning\Nauka\Nauka.TicTacToe\obj\Debug\Nauka.TicTacToe.Properties.Resources.resources
+D:\MyLearning\Nauka\Nauka.TicTacToe\obj\Debug\Nauka.TicTacToe.csproj.GenerateResource.Cache
