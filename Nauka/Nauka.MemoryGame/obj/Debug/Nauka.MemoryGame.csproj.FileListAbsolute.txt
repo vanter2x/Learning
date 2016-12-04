@@ -14,3 +14,4 @@ D:\MyLearning\Nauka\Nauka.MemoryGame\obj\Debug\Nauka.MemoryGame.Properties.Resou
 D:\MyLearning\Nauka\Nauka.MemoryGame\obj\Debug\Nauka.MemoryGame.csproj.GenerateResource.Cache
 D:\MyLearning\Nauka\Nauka.MemoryGame\obj\Debug\Nauka.MemoryGame.exe
 D:\MyLearning\Nauka\Nauka.MemoryGame\obj\Debug\Nauka.MemoryGame.pdb
+D:\MyLearning\Nauka\Nauka.MemoryGame\obj\Debug\Nauka.MemoryGame.Form1.resources

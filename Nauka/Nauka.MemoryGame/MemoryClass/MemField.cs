@@ -20,25 +20,26 @@ namespace Nauka.MemoryGame.MemoryClass
             Left = x*Width;
             Text = "";
             BackgroundImage = null;
-            Click += Clicker;
+            FlatStyle = FlatStyle.Popup;
+            BackgroundImageLayout = ImageLayout.Stretch;
+
         }
 
-        private void Clicker(object sender, EventArgs e)
-        {
-            var helpField = (MemField) sender;
-            if (helpField.Clicked) return;
-
-            
-        }
+        
 
         public void ShowMe(List<MemField> fields)
         {
             fields.ForEach(field => field.Visible = true);
         }
 
-        public void PictureShow(List<MemField> fields , MemBoard memBoard)
+        public void ShowPicture(MemField memField)
         {
-            //fields.ForEach(field => field.BackgroundImage = true);
+            memField.BackgroundImage = Image.FromFile("../../MemoryImage/" + (memField.Sign > 0 ? memField.Sign : memField.Sign * -1) + ".png");
+        }
+
+        public void PictureBack()
+        {
+            BackgroundImage = null;
         }
 
     }
