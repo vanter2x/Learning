@@ -13,7 +13,7 @@ namespace Nauka.MemoryGame.MemoryClass
             Normal = 24,
             Hard = 36
         };
-        private ImageList _imageList = new ImageList();
+       
         public List<MemField> Board = new List<MemField>();
         private Level _gameLevel;
 

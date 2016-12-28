@@ -12,7 +12,7 @@ namespace Nauka.MemoryGame.MemoryClass
 
         public void ShufleFields(MemBoard memBoard)
         {
-            Random numer = new Random(new DateTime().Millisecond);
+            Random numer = new Random(DateTime.Now.Millisecond);
             var hList = memBoard.Board;
             var info = memBoard.GetType().GetField("_gameLevel", BindingFlags.NonPublic | BindingFlags.Instance)?.GetValue(memBoard);
             if (info != null)
@@ -26,7 +26,7 @@ namespace Nauka.MemoryGame.MemoryClass
                     hList.Where(field => field.Sign == 0).ToList()[numer.Next(0, hList.Count - 2 - i * 2)].Sign = -(i + 1);
                 }
             }
-            hList.ForEach(field => field.Text = field.Sign.ToString());
+            //hList.ForEach(field => field.Text = field.Sign.ToString());
         }
 
         public async void Clicker(MemField memField, List<MemField> fieldsList)
