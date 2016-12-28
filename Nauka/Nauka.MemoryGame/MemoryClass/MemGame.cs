@@ -26,37 +26,34 @@ namespace Nauka.MemoryGame.MemoryClass
                     hList.Where(field => field.Sign == 0).ToList()[numer.Next(0, hList.Count - 2 - i * 2)].Sign = -(i + 1);
                 }
             }
-          //  hList.ForEach(field => field.Text = field.Sign.ToString());
+            hList.ForEach(field => field.Text = field.Sign.ToString());
         }
 
         public async void Clicker(MemField memField, List<MemField> fieldsList)
         {
-            if (fieldsList.Count(mm => mm.Clicked) >= 2) return;
-            if (!fieldsList.Any(mm => mm.Clicked))
+            if (fieldsList.Count(mm => mm.Clicked) >= 2 || memField.Clicked) return; // 2 clicked
+            if (!fieldsList.Any(mm => mm.Clicked)) // if nothing is clicked...
             {
                 memField.Clicked = true;
                 memField.ShowPicture(memField);
                 return;
             }
 
-            //memField.Clicked = true;
+            //if one of blocks is clicked...
             memField.ShowPicture(memField);
             memField.Clicked = true;
             await Task.Delay(1000);
-            // zmienic to co na dole
-            var helpBool = CheckFields(fieldsList.First(field => field.Clicked), memField);
-            fieldsList.FindAll(ff=>ff.Clicked).ForEach(mm=>mm.Visible = !helpBool);
+            
+            var helpInt = 0;
+            fieldsList.Where(field => field.Clicked).ToList().ForEach(mm => helpInt += mm.Sign); // chceck Sign
+            fieldsList.FindAll(ff=>ff.Clicked).ForEach(mm=>mm.Visible = helpInt == 0 ? false : true); // set visible if sign is the same or different
+            //change back a picture and clicked..
             fieldsList.FindAll(ff => ff.Clicked).ForEach(mm => mm.PictureBack());
             fieldsList.ForEach(ff=>ff.Clicked = false);
 
         }
 
-        private bool CheckFields(MemField first, MemField second)
-        {
-            
-            return (first.Sign + second.Sign) == 0 ? true : false;
-
-        }
+       
 
         
 
