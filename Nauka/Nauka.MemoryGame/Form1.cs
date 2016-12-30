@@ -24,7 +24,7 @@ namespace Nauka.MemoryGame
         //Start new game method
         private void StartGame(int lvl)
         {
-            _gameTimer.Interval = 1000;
+            _gameTimer.Interval = 100;
             _gameTimer.Enabled = true;
             _gameTimer.Tick += GameTimerOnTick;
             Controls.OfType<MemField>().ToList().ForEach(field=>field.Dispose());
@@ -37,8 +37,9 @@ namespace Nauka.MemoryGame
 
         private void GameTimerOnTick(object sender, EventArgs eventArgs)
         {
-            
-
+           ss = (ss < 59) ? ss += 1 : ss = 0;
+           mm = (mm < 59 || ss == 0) ? mm += 1 : mm = 0;
+            mnuTime.Text = $"{mm}:{ss}";
         }
 
         

@@ -9,7 +9,6 @@ C:\Users\User\documents\visual studio 2015\Projects\Nauka\Nauka.MemoryGame\obj\D
 D:\MyLearning\Nauka\Nauka.MemoryGame\bin\Debug\Nauka.MemoryGame.exe.config
 D:\MyLearning\Nauka\Nauka.MemoryGame\bin\Debug\Nauka.MemoryGame.exe
 D:\MyLearning\Nauka\Nauka.MemoryGame\bin\Debug\Nauka.MemoryGame.pdb
-D:\MyLearning\Nauka\Nauka.MemoryGame\obj\Debug\Nauka.MemoryGame.csprojResolveAssemblyReference.cache
 D:\MyLearning\Nauka\Nauka.MemoryGame\obj\Debug\Nauka.MemoryGame.Properties.Resources.resources
 D:\MyLearning\Nauka\Nauka.MemoryGame\obj\Debug\Nauka.MemoryGame.csproj.GenerateResource.Cache
 D:\MyLearning\Nauka\Nauka.MemoryGame\obj\Debug\Nauka.MemoryGame.exe
