@@ -11,8 +11,11 @@ namespace Nauka.MemoryGame
     {
         private  MemGame _game;
         private  MemBoard _gameBoard;
+        private Timer _gameTimer;
+        private int hh,mm,ss = 0;
         public Form1()
         {
+            _gameTimer = new Timer();
             InitializeComponent();
             _game = new MemGame();
             StartGame(16);
@@ -21,15 +24,24 @@ namespace Nauka.MemoryGame
         //Start new game method
         private void StartGame(int lvl)
         {
+            _gameTimer.Interval = 1000;
+            _gameTimer.Enabled = true;
+            _gameTimer.Tick += GameTimerOnTick;
             Controls.OfType<MemField>().ToList().ForEach(field=>field.Dispose());
-            
             _gameBoard = null;
             _gameBoard = new MemBoard((MemBoard.Level)lvl, this);
             _gameBoard.Board.ForEach(mm => mm.Click += ClickMe);
-           
             _game.ShufleFields(_gameBoard);
             SetGameSize(_gameBoard, _gameBoard.Board[0]);
         }
+
+        private void GameTimerOnTick(object sender, EventArgs eventArgs)
+        {
+            
+
+        }
+
+        
         //------------------------------------------------------------------------------------------------------------------
 
        //Click field method
@@ -38,6 +50,9 @@ namespace Nauka.MemoryGame
             MemField field = sender as MemField;
             _game.Clicker(field,_gameBoard.Board.Where(fld =>fld.Visible).ToList());
         }
+
+       
+
         // ------------------------------------------------------------------------------------------------------------------
 
 

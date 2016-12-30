@@ -34,6 +34,7 @@ namespace Nauka.MemoryGame
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnuStart = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuLevel = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,6 +42,7 @@ namespace Nauka.MemoryGame
             this.mnuNormal = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHard = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuTime = new System.Windows.Forms.ToolStripMenuItem();
+            
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,7 +81,7 @@ namespace Nauka.MemoryGame
             this.mnuEasy.CheckOnClick = true;
             this.mnuEasy.CheckState = System.Windows.Forms.CheckState.Checked;
             this.mnuEasy.Name = "mnuEasy";
-            this.mnuEasy.Size = new System.Drawing.Size(152, 22);
+            this.mnuEasy.Size = new System.Drawing.Size(111, 22);
             this.mnuEasy.Tag = "16";
             this.mnuEasy.Text = "Łatwy";
             this.mnuEasy.Click += new System.EventHandler(this.mnuLevelChange_Click);
@@ -88,7 +90,7 @@ namespace Nauka.MemoryGame
             // 
             this.mnuNormal.CheckOnClick = true;
             this.mnuNormal.Name = "mnuNormal";
-            this.mnuNormal.Size = new System.Drawing.Size(152, 22);
+            this.mnuNormal.Size = new System.Drawing.Size(111, 22);
             this.mnuNormal.Tag = "24";
             this.mnuNormal.Text = "Średni";
             this.mnuNormal.Click += new System.EventHandler(this.mnuLevelChange_Click);
@@ -97,7 +99,7 @@ namespace Nauka.MemoryGame
             // 
             this.mnuHard.CheckOnClick = true;
             this.mnuHard.Name = "mnuHard";
-            this.mnuHard.Size = new System.Drawing.Size(152, 22);
+            this.mnuHard.Size = new System.Drawing.Size(111, 22);
             this.mnuHard.Tag = "36";
             this.mnuHard.Text = "Trudny";
             this.mnuHard.Click += new System.EventHandler(this.mnuLevelChange_Click);
@@ -114,7 +116,11 @@ namespace Nauka.MemoryGame
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MemGame";
@@ -145,6 +151,7 @@ namespace Nauka.MemoryGame
         private System.Windows.Forms.ToolStripMenuItem mnuEasy;
         private System.Windows.Forms.ToolStripMenuItem mnuNormal;
         private System.Windows.Forms.ToolStripMenuItem mnuHard;
+        
     }
 }
 
