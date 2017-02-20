@@ -38,8 +38,14 @@ namespace Nauka.MemoryGame
         private void GameTimerOnTick(object sender, EventArgs eventArgs)
         {
            ss = (ss < 59) ? ss += 1 : ss = 0;
-           mm = (mm < 59 || ss == 0) ? mm += 1 : mm = 0;
+           if(ss==0) mm = (mm > 59) ? mm = 0 : mm += 1;
             mnuTime.Text = $"{mm}:{ss}";
+
+            if (_game.CheckEndOfGame(_gameBoard.Board))
+            {
+                _gameTimer.Enabled = false;
+                MessageBox.Show($@"Zakończyłeś w czasie {mm}:{ss}. ");
+            }
         }
 
         

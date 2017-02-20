@@ -53,6 +53,11 @@ namespace Nauka.MemoryGame.MemoryClass
 
         }
 
+        public bool CheckEndOfGame(List<MemField> fieldsList)
+        {
+            return fieldsList.All(e => e.Visible);
+        }
+
        
 
         
