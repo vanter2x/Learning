@@ -26,7 +26,7 @@ namespace Nauka.MemoryGame.MemoryClass
                     hList.Where(field => field.Sign == 0).ToList()[numer.Next(0, hList.Count - 2 - i * 2)].Sign = -(i + 1);
                 }
             }
-            //hList.ForEach(field => field.Text = field.Sign.ToString());
+            hList.ForEach(field => field.Text = field.Sign.ToString());
         }
 
         public async void Clicker(MemField memField, List<MemField> fieldsList)
@@ -55,7 +55,7 @@ namespace Nauka.MemoryGame.MemoryClass
 
         public bool CheckEndOfGame(List<MemField> fieldsList)
         {
-            return fieldsList.All(e => e.Visible);
+            return !fieldsList.Any(e => e.Visible);
         }
 
        

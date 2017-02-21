@@ -12,7 +12,7 @@ namespace Nauka.MemoryGame
         private  MemGame _game;
         private  MemBoard _gameBoard;
         private Timer _gameTimer;
-        private int hh,mm,ss = 0;
+        private int hh,mm,ss =0;
         public Form1()
         {
             _gameTimer = new Timer();
@@ -24,7 +24,9 @@ namespace Nauka.MemoryGame
         //Start new game method
         private void StartGame(int lvl)
         {
-            _gameTimer.Interval = 100;
+            ss = 0;
+            mm = 0;
+            _gameTimer.Interval = 1000;
             _gameTimer.Enabled = true;
             _gameTimer.Tick += GameTimerOnTick;
             Controls.OfType<MemField>().ToList().ForEach(field=>field.Dispose());
